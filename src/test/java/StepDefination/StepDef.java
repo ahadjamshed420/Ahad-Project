@@ -1,9 +1,7 @@
 package StepDefination;
 
 import PageObject.*;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
+import io.cucumber.java.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -38,7 +36,6 @@ public class StepDef extends BaseClass{
     @Given("User launch the Chrome Browser")
     public void user_launch_the_chrome_browser() {
 
-        //driver = new ChromeDriver();
         logpage = new LoginPage(driver);
         cartpage = new ProductListing(driver);
         pdp = new ProductDetailPage(driver);
@@ -409,16 +406,13 @@ public class StepDef extends BaseClass{
     public void TearDown(Scenario sc) throws IOException {
 
         System.out.println("Sanity After method executed");
-        if (sc.isFailed())
-        {
+
+        if (sc.isFailed()) {
             byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            Allure.addAttachment("Failed Screenshot" , new ByteArrayInputStream(screenshot));
+            Allure.addAttachment("Failed Screenshot", new ByteArrayInputStream(screenshot));
         }
+
         driver.quit();
     }
-
-
-
-
 
 }

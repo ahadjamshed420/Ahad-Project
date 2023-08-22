@@ -6,7 +6,7 @@ public enum ProductDetailPageEnum {
 
     click_on_product_from_listing_page("(//div[@class='inventory_item_img'])[" + BaseClass.clickproduct + "]"),
     Verify_pdp_should_open_successfully("//button[contains(text(), 'Add to cart')]"),
-    pdp_expected_text("Add to carts");
+    pdp_expected_text("Add to cart");
 
     public String label;
 
