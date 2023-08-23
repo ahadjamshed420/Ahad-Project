@@ -6,7 +6,7 @@
                     pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t]%-5level %logger{36} - %msg%n" />
         </Appender>
 
-        <Appender type="File" name="file" fileName="D:\Automation Task\Ahad-Project\src\test\ResultsLogs\app.log">
+        <Appender type="File" name="file" fileName="src\test\ResultsLogs\app.log">
             <Layout type="PatternLayout"
                     pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t]%-5level %logger{36} - %msg%n" />
         </Appender>

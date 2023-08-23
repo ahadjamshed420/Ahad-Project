@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions
-        (features = "D://Automation Task//Ahad-Project//Features//Login.feature",
+        (features = "Features/Login.feature",
                 glue = "StepDefination",
                 //tags = "@Sanity",
-                tags = "@Regression",
+                //tags = "@Regression",
                 dryRun = false,
                 monochrome = false,
                 plugin = {"pretty", "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm"}
