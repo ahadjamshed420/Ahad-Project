@@ -36,6 +36,7 @@ public class ProductDetailPage extends BaseClass {
     }
 
     public void user_verify_add_to_cart_successfully_from_pdp() {
+
         Assert.assertEquals(true, driver.findElement(By.xpath(ProductListingEnum.verify_click_on_short_addtocart.getDummy())).isDisplayed());
 
     }

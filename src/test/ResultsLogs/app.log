@@ -1,9 +1,0 @@
-2023-08-21 13:15:34.648 [main]INFO  StepDefination.StepDef - User launch chrome browser
-2023-08-21 13:15:36.254 [main]INFO  StepDefination.StepDef - User Open the URL
-2023-08-21 13:15:36.345 [main]INFO  StepDefination.StepDef - User enters the username
-2023-08-21 13:15:36.407 [main]INFO  StepDefination.StepDef - User enters the password
-2023-08-21 13:15:36.495 [main]INFO  StepDefination.StepDef - User click on login button
-2023-08-21 13:15:36.523 [main]INFO  StepDefination.StepDef - User logged in successfully
-2023-08-21 13:15:36.570 [main]INFO  StepDefination.StepDef - User click on short add to cart
-2023-08-21 13:15:36.606 [main]INFO  StepDefination.StepDef - Verify item should be add in the cart from short add to cart
-2023-08-21 13:15:36.656 [main]INFO  StepDefination.StepDef - User click on product from listning page

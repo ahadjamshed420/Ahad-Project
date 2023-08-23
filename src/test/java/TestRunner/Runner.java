@@ -1,6 +1,5 @@
 package TestRunner;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -10,12 +9,10 @@ import org.junit.runner.RunWith;
         (features = "D://Automation Task//Ahad-Project//Features//Login.feature",
                 glue = "StepDefination",
                 //tags = "@Sanity",
-                //tags = "@Regression",
+                tags = "@Regression",
                 dryRun = false,
                 monochrome = false,
                 plugin = {"pretty", "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm"}
-
-
 
         )
 public class Runner {

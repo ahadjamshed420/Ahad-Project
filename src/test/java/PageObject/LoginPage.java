@@ -10,9 +10,6 @@ import org.testng.Assert;
 
 public class LoginPage extends BaseClass {
 
-    //public WebDriver driver;
-
-    //Create Parametrize Constructor
     public LoginPage (WebDriver rDriver)
     {
         driver = rDriver;
@@ -32,19 +29,16 @@ public class LoginPage extends BaseClass {
     public void enter_username(String usrname)
     {
         driver.findElement(By.xpath(LoginEnum.enter_username.getDummy())).sendKeys(usrname);
-        //username.sendKeys(usrname);
     }
 
     public void enter_password(String pwd)
     {
         driver.findElement(By.xpath(LoginEnum.enter_password.getDummy())).sendKeys(pwd);
-        //password.sendKeys(pwd);
     }
 
     public void click_lgnbtn()
     {
         driver.findElement(By.id(LoginEnum.click_loginbutton.getDummy())).click();
-        //lgnbtn.click();
     }
 
     public void verify_login_successfully()
